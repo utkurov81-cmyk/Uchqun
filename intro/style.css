@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #fcf8f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Asosiy oyna kartasi - Kengligi va balandligi kattalashtirildi */
+.onboarding-wrapper {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onboarding-card {
+    width: 100%;
+    max-width: 1150px; /* Karta kengaytirildi */
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    display: flex;
+    overflow: hidden;
+    min-height: 640px; /* Balandligi kattalashtirildi */
+}
+
+/* Chap qism */
+.card-left {
+    flex: 1.1;
+    background: linear-gradient(135deg, #df2411 0%, #f37324 45%, #f5af19 100%);
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff5e00;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.brand-sub {
+    color: #ffe600;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.left-content {
+    margin-top: auto;
+}
+
+.concept-label {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.card-left h2 {
+    color: #ffffff;
+    font-size: 38px; /* Sarlavha kattalashtirildi */
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+/* O'ng qism */
+.card-right {
+    flex: 1.3;
+    padding: 55px 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Nuqtalar */
+.pagination-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.dot {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    width: 28px;
+    background: linear-gradient(90deg, #ff3b00, #ff9500);
+}
+
+.dot:not(.active) {
+    width: 6px;
+}
+
+/* Xush kelibsiz matni */
+.welcome-text h2 {
+    color: #1a1c29;
+    font-size: 32px; /* Matn kattalashtirildi */
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.welcome-text p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+/* Xususiyatlar kartalari */
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: #fafafc;
+    border: 1px solid #f1f3f9;
+    border-radius: 14px;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #fff9e6;
+    color: #f59e0b;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.feature-info h4 {
+    color: #1e293b;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.feature-info p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Pastki qism va tugmalar */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.skip-btn {
+    color: #b45309;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.skip-btn:hover {
+    opacity: 0.8;
+}
+
+.next-btn {
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #ff3b00 0%, #ff9500 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 94, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.next-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(255, 94, 0, 0.4);
+}
+
+/* Mobil moslashuvchanlik (Responsive) */
+@media (max-width: 950px) {
+    .onboarding-card {
+        flex-direction: column;
+        max-width: 550px;
+    }
+    .card-left {
+        padding: 40px;
+        min-height: 280px;
+    }
+    .card-right {
+        padding: 40px;
+    }
+}

@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #f8f9fc;
+    color: #1a1c29;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 260px;
+    background-color: #16192c;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #df2411 0%, #f37324 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.brand-sub {
+    color: #ffd000;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-item.active a, .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.sidebar-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-details h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.user-details p {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* --- Main Content --- */
+.main-content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 30px 40px;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 20px;
+}
+
+.header-select-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.select-label {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.dropdown-btn {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.notification-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+/* Sarlavha va qidiruv bloki */
+.page-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-texts h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a1c29;
+    margin-bottom: 4px;
+}
+
+.title-texts p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.search-box {
+    position: relative;
+    width: 280px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 16px 12px 42px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 13px;
+    outline: none;
+    color: #1a1c29;
+    transition: all 0.2s;
+}
+
+.search-box input:focus {
+    border-color: #ff5e00;
+    box-shadow: 0 0 0 3px rgba(255, 94, 0, 0.1);
+}
+
+/* Mavzular ro'yxati */
+.topics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.topic-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.01);
+    transition: all 0.2s;
+}
+
+.topic-item:hover {
+    border-color: rgba(255, 94, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.topic-item.locked {
+    background-color: #fafbfc;
+    opacity: 0.8;
+}
+
+.topic-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topic-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.green-num { background-color: #e6f4ea; color: #137333; }
+.orange-num { background-color: #fff3e0; color: #e65100; }
+.gray-num { background-color: #f1f5f9; color: #64748b; }
+
+.topic-info h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1c29;
+    margin-bottom: 4px;
+}
+
+.topic-info p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.topic-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.progress-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 11px;
+    color: #64748b;
+    gap: 2px;
+}
+
+.progress-info .percent {
+    font-weight: 700;
+    color: #1a1c29;
+}
+
+.mini-progress {
+    width: 100px;
+    height: 6px;
+    background-color: #f1f5f9;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.mini-fill {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.status-badge {
+    font-size: 10px;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    min-width: 125px;
+}
+
+.status-badge.green { background-color: #e6f4ea; color: #137333; }
+.status-badge.orange { background-color: #fff3e0; color: #e65100; }
+.status-badge.yellow { background-color: #fff8e1; color: #f57f17; }
+.status-badge.red { background-color: #fef2f2; color: #dc2626; }
+
+.arrow-btn {
+    width: 36px;
+    height: 36px;
+    background-color: #f8f9fc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.arrow-btn:hover {
+    background-color: #ff5e00;
+    color: #ffffff;
+    border-color: #ff5e00;
+}
+
+/* Responsive (Mobil uchun) */
+@media (max-width: 1000px) {
+    .topic-right {
+        gap: 15px;
+    }
+    .mini-progress, .progress-info {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .page-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .search-box {
+        width: 100%;
+    }
+}

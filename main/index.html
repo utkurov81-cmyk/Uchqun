@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening darslarim - UCHQUN</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <!-- Chap menyu (Sidebar) -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="logo-box">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="brand-name">UCHQUN</span>
+                        <span class="brand-sub">YOSH BILIMDONLAR UYI</span>
+                    </div>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <a href="#"><i class="fa-solid fa-book-open"></i> Mening darslarim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-file-lines"></i> Topshiriqlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-trophy"></i> Reyting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-comments"></i> Muloqot markazi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-solid fa-user"></i> Mening profilim</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pastki foydalanuvchi ma'lumoti -->
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Azizbek Qodirov" class="user-img">
+                    <div class="user-details">
+                        <h4>Azizbek Qodirov</h4>
+                        <p>Guruh: F-2401</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Asosiy qism (Main Content) -->
+        <main class="main-content">
+            
+            <!-- Yuqori panel (Header) -->
+            <header class="dashboard-header">
+                <div class="header-select-box">
+                    <span class="select-label">Dastur:</span>
+                    <div class="dropdown-btn">
+                        <span>Frontend Dasturlash</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Banner (Bugungi vazifa) -->
+            <div class="task-banner">
+                <div class="banner-text-content">
+                    <h2>Bugungi vazifa: Portfolio loyihasini yakunlash</h2>
+                    <p>Haftalik amaliy topshiriq topshirish vaqti tugashiga 1 kun qoldi.</p>
+                </div>
+                <button class="upload-task-btn">Vazifani yuklash</button>
+            </div>
+
+            <!-- Modullar sarlavhasi -->
+            <div class="section-title">
+                <h2>Frontend moduli mavzulari</h2>
+                <p>Siz ushbu bosqichda quyidagi modullarni o'zlashtirishingiz lozim.</p>
+            </div>
+
+            <!-- Modullar kartochkalari (Grid) -->
+            <div class="modules-grid">
+                
+                <!-- 1-Modul: HTML Asoslari (Tugallandi) -->
+                <div class="module-card">
+                    <div class="module-card-header">
+                        <h3>HTML Asoslari</h3>
+                        <span class="status-badge green">TUGALLANDI</span>
+                    </div>
+                    <div class="module-info">
+                        <span><i class="fa-regular fa-book-open"></i> 12 dars</span>
+                        <span><i class="fa-solid fa-hashtag"></i> 24 mavzu</span>
+                    </div>
+                    <div class="progress-box">
+                        <div class="progress-labels">
+                            <span>Kurs taraqqiyoti</span>
+                            <span class="percent">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <button class="lesson-btn" id="btn">Darslarga o'tish</button>
+                </div>
+
+                <!-- 2-Modul: CSS Visual Dizayn (Faollashgan) -->
+                <div class="module-card">
+                    <div class="module-card-header">
+                        <h3>CSS Visual Dizayn</h3>
+                        <span class="status-badge orange">FAOLLASHGAN</span>
+                    </div>
+                    <div class="module-info">
+                        <span><i class="fa-regular fa-book-open"></i> 18 dars</span>
+                        <span><i class="fa-solid fa-hashtag"></i> 36 mavzu</span>
+                    </div>
+                    <div class="progress-box">
+                        <div class="progress-labels">
+                            <span>Kurs taraqqiyoti</span>
+                            <span class="percent">65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <button class="lesson-btn active-btn">Darslarga o'tish</button>
+                </div>
+
+                <!-- 3-Modul: JavaScript Dasturlash (Faollashgan) -->
+                <div class="module-card">
+                    <div class="module-card-header">
+                        <h3>JavaScript Dasturlash</h3>
+                        <span class="status-badge orange">FAOLLASHGAN</span>
+                    </div>
+                    <div class="module-info">
+                        <span><i class="fa-regular fa-book-open"></i> 24 dars</span>
+                        <span><i class="fa-solid fa-hashtag"></i> 48 mavzu</span>
+                    </div>
+                    <div class="progress-box">
+                        <div class="progress-labels">
+                            <span>Kurs taraqqiyoti</span>
+                            <span class="percent">15%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 15%;"></div>
+                        </div>
+                    </div>
+                    <button class="lesson-btn active-btn" id="btn">Darslarga o'tish</button>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
